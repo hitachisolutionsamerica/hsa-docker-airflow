@@ -1,10 +1,11 @@
 # What is Apache Airflow?
-
 > Airflow is a platform to programmatically author, schedule and monitor workflows.
 
 https://airflow.apache.org/
 
 # TL;DR
+This is a repository which tracks `bitnami/bitnami-docker-airflow` but adds additional functionality to support the needs of Hitachi Solutions and it's customers.
+For our purposes, only Airflow 2.0 is built and maintained. 
 
 ## Docker Compose
 
@@ -15,10 +16,11 @@ $ docker-compose up
 
 You can find the default credentials and available configuration options in the [Environment Variables](#environment-variables) section.
 
-# Why use Bitnami Images?
+# Why are we using Bitnami (VMWare) Images?
 
+* **Bitanami was creating Airflow docker images before the main Airflow project, and have the only trusted GA images.**
 * Bitnami closely tracks upstream source changes and promptly publishes new versions of this image using our automated systems.
-* With Bitnami images the latest bug fixes and features are available as soon as possible.
+* With Bitnami images the latest bug fixes and features are available fairly quickly, and bugs can be raised if we can't address issues directly.
 * Bitnami containers, virtual machines and cloud images use the same components and configuration approach - making it easy to switch between formats based on your project needs.
 * All our images are based on [minideb](https://github.com/bitnami/minideb) a minimalist Debian based container image which gives you a small base container image and the familiarity of a leading Linux distribution.
 * All Bitnami images available in Docker Hub are signed with [Docker Content Trust (DCT)](https://docs.docker.com/engine/security/trust/content_trust/). You can use `DOCKER_CONTENT_TRUST=1` to verify the integrity of the images.
